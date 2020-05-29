@@ -66,6 +66,7 @@ function desplazarA() {
     });
 }
 
+
 function desplazarI() {
     anime({
         targets: '#elemento',
