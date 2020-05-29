@@ -5,6 +5,9 @@ var maxY = 450;
 var minX = 50;
 var minY = 50;
 
+//valor de incremento/decremento
+var inc = 50;
+
 function setup() {
     noCanvas();
     //Inicializacion del Reconocedor
@@ -24,32 +27,31 @@ function setup() {
             console.log(voice.resultString);
             if(voice.resultString == 'derecha'){
                 if(xpos <= maxX){
-                    xpos = xpos + 50;
+                    xpos = xpos + inc;
                     desplazarD();
                 }
             }else if(voice.resultString == 'izquierda'){
                 if(xpos >= minX){
-                    xpos = xpos - 50;
+                    xpos = xpos - inc;
                     desplazarI();
                 }
             }
             else if(voice.resultString == 'arriba'){
                 if(ypos >= minY){
-                    ypos = ypos - 50;
+                    ypos = ypos - inc;
                     desplazarA();
     
                 }
             }
             else if(voice.resultString == 'abajo'){
                 if(ypos <= maxY){
-                    ypos = ypos + 50;
+                    ypos = ypos + inc;
                     desplazarAb();
                 }
             }
         }
     }
 }
-
 
 
 function desplazarD() {
