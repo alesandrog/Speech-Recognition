@@ -7,24 +7,42 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.5/addons/p5.dom.js"></script>
 	<script src="js/p5.speech.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.0/lib/anime.min.js"></script>    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">    
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #ccd3d7;">
+    <div class="row">
+        <div class="col">
+            <ul class="nav nav-tabs" style="color: #eef4f7;background: #055ada;">
+                <li class="nav-item"><a class="nav-link active" href="#" style="background: #055ada;color: #eef4f7;font-size: 18px;font-weight: bold;border-width: 0px;">Speech Recognition&nbsp;</a></li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="height: 15%;">
+            <div class="card">
+                <div class="card-body" style="background: rgba(97,136,183,0.11);box-shadow: 5px 0px;">
+                    <h4 class="card-title">Demo!</h4>
+                    <h6 class="text-muted card-subtitle mb-2"></h6>
+                    <p class="card-text">Mueve el recuadro con comandos de voz. Recuerda hablar fuerte y claro.</p>
+                    <p class="card-text">Usa alguno de estos comandos :&nbsp;<strong>ARRIBA, ABAJO, IZQUIERDA, DERECHA.</strong></p>
+                    <p class="card-text"><em>Ten cuidado con los bordes!</em></p>
+                </div>
+            </div>
+        </div>
+    </div>
     <div id="contenedor">
         <div id="elemento" >
         
         </div>
     </div>
-    <div id = "instrucciones">
-        <p>
-            Permite al navegador usar el microfono
-        </p>
-        <p>
-            Di fuerte y claro 'ARRIBA' , 'ABAJO', 'IZQUIERDA', 'DERECHA' para mover el cuadro
-        </p>
-    </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 </body>
 <script src="js/index.js"></script>
 </html>
